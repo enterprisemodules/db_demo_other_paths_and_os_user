@@ -1,0 +1,22 @@
+deployment_zone: vagrant
+
+role: role::oradb::simple_db
+
+ora_profile::database::dbname:                            DB122
+ora_profile::database::version:                           12.2.0.1
+ora_profile::database::db_software::file_name:            linuxx64_12201_database
+
+ora_profile::database::os_user:                                           pietjepuk
+ora_profile::database::dba_group:                                         oracle_beheer
+ora_profile::database::install_group:                                     o_install
+ora_profile::database::oracle_base:                                       /other/yes/my_oracle
+ora_profile::database::oracle_home:                                       /other/yes/my_oracle/product/12.2.0.1/db_home1
+ora_profile::database::ora_inventory_dir:                                 /other/yes/my_oracle/admin
+ora_profile::database::db_software::dirs:
+  - /other
+  - /other/yes
+  - /other/yes/my_oracle
+  - /u02
+  - /u02/oradata
+  - /u03
+  - /u03/fast_recovery_area
